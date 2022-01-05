@@ -2,7 +2,7 @@
 
 def main():
     print("Welcome to the network grader!")
-    user_input = input("How fast is your wi-fi network? (answers must be a number from 1MBPS to 1000MPS for gigabyte and above speeds")
+    user_input = input("How fast is your wi-fi network? \n(answers must be a number from 1MBPS to 1000MPS for gigabyte and above speeds)\n")
     int_user_input = int(user_input)
     if int_user_input >= 1000:
         print("Your Wi-fi is grade S! Fantastic!")
