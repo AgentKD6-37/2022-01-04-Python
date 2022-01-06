@@ -11,9 +11,10 @@ def main():
     for farm in farms:
         for item in farm:
             if item == "name":
-                print(farm[item])
+                print("The farm name is: " + farm[item])
             else:
                 aglist = farm[item]
+                print("The farms products are: ")
                 for i in aglist:
                     print(i)
         print("----------------")
