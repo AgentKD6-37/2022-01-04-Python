@@ -42,7 +42,8 @@ def pretty_response(data):
         pokemon_flavor_text = data["flavor_text_entries"][random_flavor_text]["flavor_text"]
         print(
             f"{pokemon_name} is a {pokemon_type} Pokemon. Commonly {pokemon_height}m tall and weighing on"
-            f" average {pokemon_weight}kg. This pokemon is {pokemon_color} in color. {pokemon_flavor_text}"
+            f" average {pokemon_weight}kg. This pokemon is {pokemon_color} in color. \n"
+            f"{pokemon_flavor_text}"
         )
 
 
