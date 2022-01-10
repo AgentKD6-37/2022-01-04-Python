@@ -8,11 +8,12 @@ from random import randint
 import config
 import requests
 
+
 def start_pokedex():
     """This function starts the pokedex, greets the user, and takes and then returns the user input to main
     for manipulation"""
-    print("Pokedex v1.0 is starting up!")
-    user_input = input("What Pokemon would you like to identify? \n").lower()
+    input("Pokedex v1.0 is starting! Press Enter to continue...")
+    user_input = input("\n\n\nWhat Pokemon would you like to identify: ").lower()
     return user_input
 
 
@@ -31,11 +32,15 @@ def get_pokemon_picture(picture_url):
 def get_pokemon(pokemon):
     """This function takes the user input 'pokemon' and returns the JSON data from the API call to main."""
     if pokemon:
-        poke_url = config.API_Pokemon + pokemon + "/"
-        poke_data = requests.get(poke_url).json()
-        poke_id = str(poke_data["id"])
-        species_data = requests.get(config.API_Species + poke_id + "/").json()
-        species_data.update(poke_data)
+        try:
+            poke_url = config.API_Pokemon + pokemon + "/"
+            poke_data = requests.get(poke_url).json()
+            poke_id = str(poke_data["id"])
+            species_data = requests.get(config.API_Species + poke_id + "/").json()
+            species_data.update(poke_data)
+        except:
+            input("There was no result for that pokemon! To try again press Enter")
+            main()
     else:
         start_pokedex()
     return species_data
