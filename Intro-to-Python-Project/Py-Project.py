@@ -35,13 +35,13 @@ def pretty_response(data):
     random_flavor_text = randint(0, 15)
     if data:
         pokemon_name = data["name"].capitalize()
-        pokemon_type = data["types"][0]["type"]["name"]
+        pokemon_type = data["types"][0]["type"]["name"].capitalize()
         pokemon_height = data["height"]
         pokemon_weight = (data["weight"]) / 10
         pokemon_color = data["color"]["name"]
         pokemon_flavor_text = data["flavor_text_entries"][random_flavor_text]["flavor_text"]
         print(
-            f"{pokemon_name} is a {pokemon_type} Pokemon. Commonly {pokemon_height}m tall and weighing on"
+            f"{pokemon_name} is a {pokemon_type}-Type Pokemon. Commonly {pokemon_height}m tall and weighing on"
             f" average {pokemon_weight}kg. This pokemon is {pokemon_color} in color. \n"
             f"{pokemon_flavor_text}"
         )
