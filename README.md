@@ -15,7 +15,9 @@
 2. You will also need a filestack API key. You should make a config.py file with the following params:
 
    API_KEY = "SECRET"
+   
    API_Pokemon = f"https://pokeapi.co/api/v2/pokemon/"
+   
    API_Species = f"https://pokeapi.co/api/v2/pokemon-species/"
 
 ## Built With
