@@ -1,18 +1,17 @@
-# mycode (Project Title)
-
-One Paragraph of your project description goes here. Describe what you're trying to do.
-What is the purpose of putting up this repo?
+# PokeDex v1.0
+   Final project for Alta Labs Python Class 9 Jan 2022
+   Project written by Michael Stack github: https://github.com/AgentKD6-37
+   This program is the PokeDex! It takes a user input on what Pokemon they see and returns the Pokemon's info from
+   https://pokeapi.co for usage see the repo license
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine
-for development and testing purposes. See deployment for notes on how to deploy the project
-on a live system.
+1. Clone the repo
+3. Run the Script!
 
 ### Prerequisites
 
-What things are needed to install the software and how to install them. For now, maybe copy in
-"how to install python and python3 using apt."
+1. The requests library is required to run this script
 
 ## Built With
 
