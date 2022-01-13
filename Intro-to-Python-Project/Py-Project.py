@@ -2,7 +2,7 @@
 """Final project for Alta Labs Python Class 9 Jan 2022
    Project written by Michael Stack github: https://github.com/AgentKD6-37
    This program is the PokeDex! It takes a user input on what Pokemon they see and returns the Pokemon's info from
-   https://pokeapi.co for usage see the repo license"""
+   https://pokeapi.co for usage see the repo license."""
 
 from random import randint
 import config
